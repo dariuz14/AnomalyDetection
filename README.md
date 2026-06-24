@@ -31,5 +31,6 @@ AnomalyDetection/
 ```
 
 ## Utilizzo del codice
-1. Estrazione delle mappe di attenzione: python utility.py
-3.
+1. Caricamento del modello, estrazione e memorizzazione delle mappe di attenzione: `python utility.py` (il dataset delle immagini è gestito da `dataset.py`)
+2. Addestramento del VAE sulle mappe di attenzione ID: `python AutoEncoder/train.py` (il dataset delle mappe è gestito da `AutoEncoder/attention_maps_dataset.py`)
+3. Test del modello mediante l'errore di ricostruzione: `python AutoEncoder/test.py`
