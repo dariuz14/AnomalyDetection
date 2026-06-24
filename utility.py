@@ -79,7 +79,9 @@ if __name__ == "__main__":
 
     my_model = load_model(extract_attention=True)
 
-    #save_attention_maps(model=my_model, data_loader=ood_loader, path=attention_maps_ood_path, device=device)
+    save_attention_maps(model=my_model, data_loader=ood_loader, path=attention_maps_ood_path, device=device)
 
+    """
     scores = extract_max_softmax(model=my_model, data_loader=ood_loader, device=device)
     np.save("ood_maxsoftmax", scores)
+    """

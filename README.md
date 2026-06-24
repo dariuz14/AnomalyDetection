@@ -13,3 +13,23 @@ A partire dalle mappe di attenzione è stato addestrato un VAE (*Variational Aut
 L'errore di ricostruzione, dunque, serve da feature discriminatoria ID/ OOD.
 
 ## Struttura del progetto
+```
+AnomalyDetection/
+├── AutoEncoder/
+│   ├── vae.py                      # Variational Autoencoder
+│   ├── train.py                    # Training dell'autoencoder
+│   ├── test.py                     # Test dell'autoencoder
+│   └── attention_maps_dataset.py   # Dataset per le attention maps
+├── model.py                        # Vision Transformer (ViT)
+├── dataset.py                      # Gestione del dataset
+├── preprocess.py                   # Preprocessing dei dati
+├── forward_wrapper.py              # Wrapper per il forward pass
+├── config.py                       # Configurazione e iperparametri
+├── utility.py                      # Funzioni di utilità
+├── data/                           # Dataset (non incluso)
+└── attention_maps/                 # Mappe di attenzione (non incluse)
+```
+
+## Utilizzo del codice
+1. Estrazione delle mappe di attenzione: python utility.py
+3.
